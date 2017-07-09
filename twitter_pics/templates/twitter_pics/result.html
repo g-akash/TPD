@@ -1,0 +1,7 @@
+{% extends 'twitter_pics/base.html' %}
+{% block content %}
+{% for link in pic_links %}
+	<img src="{{link}}" alt="tweeted pic">
+	<hr>
+{% endfor %}
+{% endblock %}

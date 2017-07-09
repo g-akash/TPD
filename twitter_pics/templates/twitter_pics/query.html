@@ -1,0 +1,9 @@
+{% extends 'twitter_pics/base.html' %}
+
+	{% block content %}
+	<h1>Fill this form</h1>
+	<form method="POST" class="post-form">{% csrf_token %}
+		{{form.as_p}}
+		<button type="submit" class="savr btn btn-default">Query</button>
+	</form>
+	{% endblock %}
